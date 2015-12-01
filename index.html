@@ -1,5 +1,6 @@
 <!doctype html>
 <head>
+
 <script>
 
 
@@ -9,9 +10,8 @@ window.open("fees.html","Popup","height=300, width=300, top=200, left=500");
 </script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-
+<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel="stylesheet" type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel="stylesheet" type='text/css'>
 
 <title>Miu Web Monica| Home</title>
 
@@ -110,6 +110,10 @@ a{
 	#my-latest-work{background-color:#CC3DC1;}
 
 </style>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+<link href=
+"https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 
 </head>
 
@@ -122,6 +126,11 @@ a{
  <p> looking throught the beauty of nature</p>
  
  </header>
+ 
+ <a class="test-popup-link" href="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xlf1/t31.0-8/12028661_10156158234150331_8626604232795175536_o.jpg">  <img src= "https://scontent-ord1-1.xx.fbcdn.net/hphotos-xlf1/t31.0-8/12028661_10156158234150331_8626604232795175536_o.jpg"  width="550" alt="yy"></a>
+ 
+ <img src="https://scontent-lga3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12227815_10156230875525331_8420760089978766589_n.jpg?oh=28463d22ef45e6216a3a2790fb5dfea3&oe=56F8DD33" width="400">
+ 
  <section id="what-i-do">
  <div class="container">
  <h1>What I do </h1>
@@ -190,4 +199,9 @@ a{
 <a href="https://www.linkedin.com/pub/monico-burillo/108/43a/a60"> <i class="fa fa-linkedin-square"></i></a>
 <i class="fa fa-facebook"></i>
 </footer>
-</body>
+<script>
+$('.test-popup-link').magnificPopup({
+  type: 'image'
+  gallery:{enabled:true}
+  // other options
+});
